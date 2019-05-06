@@ -70,9 +70,9 @@
         <module>test-runner</module>
         <module>standalone</module>
         <module>vault-test-feature-pack</module>
-        <module>elytron</module>
+        <!--module>elytron</module>
         <module>embedded</module>
-        <module>scripts</module>
+        <module>scripts</module-->
     </modules>
 
 
@@ -398,11 +398,11 @@
                 </property>
             </activation>
             <modules>
-                <module>rbac</module>
+                <!--module>rbac</module>
                 <module>domain</module>
                 <module>manualmode</module>
                 <module>patching</module>
-                <module>layers</module>
+                <module>layers</module-->
             </modules>
         </profile>
 
