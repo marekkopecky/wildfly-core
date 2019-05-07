@@ -22,7 +22,6 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Assume;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -159,7 +158,6 @@ public class BracketsHighlightingTestCase {
      * @throws Exception
      */
     @Test
-    @Ignore
     public void testBasicTwoLeft() throws Exception {
         String command = "()";
         CursorMovement cursorMovement = new CursorMovement.Builder()
@@ -222,7 +220,6 @@ public class BracketsHighlightingTestCase {
      * @throws Exception
      */
     @Test
-    @Ignore
     public void testLeftAndRightComplexExpression() throws Exception {
         String command = "([){]}";
         CursorMovement cursorMovement = new CursorMovement.Builder()
@@ -329,7 +326,6 @@ public class BracketsHighlightingTestCase {
      * @throws Exception
      */
     @Test
-    @Ignore
     public void testWellFormedExpression() throws Exception {
         String command = "/abc:add({a=[], b=[], c={[],()}})";
         CursorMovement cursorMovement = new CursorMovement.Builder()
@@ -465,7 +461,6 @@ public class BracketsHighlightingTestCase {
      * @throws Exception
      */
     @Test
-    @Ignore
     public void testMultilineExpression() throws Exception {
         String command = "[{()123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_()}]";
         CursorMovement cursorMovement = new CursorMovement.Builder()
@@ -557,7 +552,6 @@ public class BracketsHighlightingTestCase {
      * @throws Exception
      */
     @Test
-    @Ignore
     public void testDisableHighlighting() throws Exception {
         CliProcessWrapper cli = new CliProcessWrapper()
                 .addCliArgument("--connect")
@@ -590,7 +584,6 @@ public class BracketsHighlightingTestCase {
      * @throws Exception
      */
     @Test
-    @Ignore
     public void testDisableColorOutput() throws Exception {
         CliProcessWrapper cli = new CliProcessWrapper()
                 .addCliArgument("--connect")
